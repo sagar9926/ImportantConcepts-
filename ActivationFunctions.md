@@ -9,3 +9,5 @@ As we can clearly see in the above perceptron image, without any activation func
 Activation functions introduces non linearities thus our model is able to learn high dimensional decision boundaries.Hence it all comes down to this, we need to apply a Activation function f(x) so as to make the network more powerfull and add ability to it to learn something complex and complicated form data and represent non-linear complex arbitrary functional mappings between inputs and outputs. Hence using a non linear Activation we are able to generate non-linear mappings from inputs to outputs.
 
 Also another important feature of a Activation function is that it should be differentiable. We need it to be this way so as to perform backpropogation 
+
+https://towardsdatascience.com/activation-functions-and-its-types-which-is-better-a9a5310cc8f
