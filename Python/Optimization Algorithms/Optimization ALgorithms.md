@@ -17,4 +17,21 @@ V_t is History. Update = V_t
 ![alt text](https://miro.medium.com/max/1816/1*ZDBsBanwX5jSFse4m2fxMQ.png)
 
 
+At every time step we are moving in the direction of the current gradient and also in the direction of the history. Every time we give lesser and lesser importance to the gradients belonging to farther time steps because we are taking Exponentially decaying average.
+Even in regions having gentle slopes, Momentum based Gradient descent is able to take large steps because of the momentum carries it along.
+
+### Disadvantage of Momentum based GD:
+1. Some time it is possible we might overshoot our goal because of the momentum it carries along due to accumulated history thus taking large steps confidently.
+
+Thus momentum based gradient descent oscillates in and out of minima valley , taking U turns after over shooting the minima. But despite these U-turns Momentum based gradient descent converges faster than vanila gradient descent
+
+## Nesterov Accelerated Gradient Descent :
+
+![alt text](https://hackernoon.com/photos/rCP6qw3H5dT85YxJBzbH5ckZfjO2-eu3t3314c)
+
+
+
+
+
+
 
