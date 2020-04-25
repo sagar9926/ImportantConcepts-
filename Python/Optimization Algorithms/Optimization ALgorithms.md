@@ -12,4 +12,8 @@ If I am repeatedly being asked to go in the same direction then I should probabl
 
 ![alt text](https://miro.medium.com/max/1220/1*IiHWuBju-ukNCTKSeU9VUA.png)
 
+V_t is History. Update = V_t
+
+![alt text](https://miro.medium.com/max/1816/1*ZDBsBanwX5jSFse4m2fxMQ.png)
+
 
