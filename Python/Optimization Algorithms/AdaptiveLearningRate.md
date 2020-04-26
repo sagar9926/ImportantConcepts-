@@ -4,4 +4,4 @@ To decay the learning rate in proportion to the update history of parameters.Let
 
 And in contrast we have a parameters whichis off most of the times , then the derivative is going to be zero most of the times, for such features we want higher learning rate because in these we are going to get a chance to learn from few inputs, thus whenever you get a chance to learn learn fast.
 
-!(https://miro.medium.com/max/1784/1*8a-kA2QHel7VbeuVIrwwUg.png)
+![AdaGrad](https://miro.medium.com/max/1784/1*8a-kA2QHel7VbeuVIrwwUg.png)
