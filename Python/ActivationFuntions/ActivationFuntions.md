@@ -13,7 +13,7 @@ If we dont't add Non linearities by using activation functions then our output w
 
 #### Saturation of Logistic Neuron :
 
-When input is very high f(x) tends to 1, and x is very low f(x) tends to zero thus causing saturation and making the Derivative of logistic neuron zero impacting the gradient flow in back propogation. Thus suffers from ** Vanishing Gradient Issue **
+When input is very high f(x) tends to 1, and x is very low f(x) tends to zero thus causing saturation and making the Derivative of logistic neuron zero impacting the gradient flow in back propogation. Thus suffers from **Vanishing Gradient Issue**
 
 ![Saturation Of Sigmoid](https://miro.medium.com/max/794/1*Dtn5ZDBvNTIqB1IhMwqiZA.png)
 
