@@ -50,9 +50,9 @@ This restricts the possible update directions i.e… gradients can move only in 
 
 ![](https://miro.medium.com/max/1134/1*1FuDQCq9EPlPDMId4nmbNw.png)
 
-1. TanH ranges from -1 to 1
-2. Again When TanH saturates the derivatives will be Zero
-3. It is computationally expensive as it requires to calculate exp(x)
+* TanH ranges from -1 to 1
+* Again When TanH saturates the derivatives will be Zero
+* It is computationally expensive as it requires to calculate exp(x)
 
 ![](https://miro.medium.com/max/1218/1*__Skz8FEhSxJcgWN57PZsw.png)
 
