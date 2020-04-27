@@ -46,6 +46,30 @@ This restricts the possible update directions i.e… gradients can move only in 
 #### Logistic function is computationally expensive as it requires to calculate exp(x)
 
 
+## TanH :
+
+![](https://miro.medium.com/max/1134/1*1FuDQCq9EPlPDMId4nmbNw.png)
+
+1. TanH ranges from -1 to 1
+2. Again When TanH saturates the derivatives will be Zero
+3. It is computationally expensive as it requires to calculate exp(x)
+
+![](https://miro.medium.com/max/1218/1*__Skz8FEhSxJcgWN57PZsw.png)
+
+Thus we can comment that TanH also suffers from **Vanishing Gradient** But the advantage of using TanH above logistic neuron is that it is **Zero Centred** thus It won't restrict the gradient movement in certain direction.
+
+
+## Relu — Rectified Linear Unit: 
+
+![](https://miro.medium.com/max/990/1*a-6BNtyuM2NNzKmcovUTdw.png)
+
+
+
+
+
+
+
+
 
 
 
