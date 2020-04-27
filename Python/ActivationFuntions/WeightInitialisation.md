@@ -29,4 +29,7 @@ If the weights are large, the post-activation sum (a₁₁ and a₁₂) could ta
 
 ![](https://miro.medium.com/max/384/1*3Iic5ob4rLXmZVFMH1KVYQ.png)
 
-If we pass the large aggregation value either to a logistic or tanh activation function, the function would hit saturation. As a result, there will be no updating of weights because values of gradient would be zero (or close to zero) that leads to the vanishing gradient problem.
+If we pass the large aggregation value either to a logistic or tanh activation function, the function would hit saturation. As a result, there will be no updating of weights because values of gradient would be zero (or close to zero) that leads to the **vanishing gradient problem.**
+
+## For Initialisation techniques Refer below link :
+https://medium.com/datadriveninvestor/deep-learning-best-practices-activation-functions-weight-initialization-methods-part-1-c235ff976ed
