@@ -87,21 +87,25 @@ On applying Relu on a1 , the value of h1 will become zero.
 
 Not only the h1 will become zero but also the derivative oh h1 w.r.t weight , let say w1, will become zero.The weights w₁, w₂, and bias b₁ will not get updated because there will be a zero term in the chain rule and the neuron will stay dead forever. This problem is known as the **Dying ReLU**.
 
-!()[https://miro.medium.com/max/958/1*kilDNZNFc9x4Y1JTEqPgcA.png]
+![](https://miro.medium.com/max/958/1*kilDNZNFc9x4Y1JTEqPgcA.png)
 
 That means no gradients will flow back and all the weights connected to that neuron will not get updated. In practice when you train a network with ReLU, you will observe that a large fraction of neurons would die. To avoid this problem we can use other variants of ReLU like Leaky ReLU or we can initialize the weights and bias to a large positive value. By initializing the weights to a large positive value even if this large negative gradient flows through the network there is still a chance that it will not become a large negative value and hence it will not mess up the network.
 
 
 ## Leaky ReLU
 
+![](https://miro.medium.com/max/1084/1*uTnswLrP0HDPKvfSl_mDhA.png)
 
+![](https://miro.medium.com/max/1000/1*VsEnYitSk5R7W12K5zP3cw.png)
 
+Because of the small value (0.01) proportional to the input for the negative values, the gradient would not saturate. If the input is negative gradient would be 0.01, this ensures neurons doesn’t die.
 
+#### Advantages :
 
-
-
-
-
+* Doesn’t saturate in the positive or negative region
+* Neurons will not die (0.01x ensures that at least small gradient will flow through)
+* Easy to compute
+* Close to zero-centered outputs
 
 
 
