@@ -61,8 +61,38 @@ Thus we can comment that TanH also suffers from **Vanishing Gradient** But the a
 
 ## Relu — Rectified Linear Unit: 
 
+* Doesnot saturate in positive region
+* Computationaly inexpensive
+* It is not Zero centred, Easy to compute
+* Used in CNNs
+
+
 ![](https://miro.medium.com/max/990/1*a-6BNtyuM2NNzKmcovUTdw.png)
 
+#### Problem with Relu : Dead Neurons
+
+![](https://miro.medium.com/max/413/1*76BCwFsm_yCitxTQ4nwyVA.png)
+
+The value of h1 is given by :
+
+![](https://miro.medium.com/max/1018/1*n-nLFA-oMQPYUnVcAWRXZw.png)
+
+Lets assume that the value of parameter b is large negative ,due to a large negative update at some point while training, then the value of a₁ changes to,
+
+![](https://miro.medium.com/max/1182/1*HR1FmHL1H6vMagsbTTBQCQ.png)
+
+On applying Relu on a1 , the value of h1 will become zero.
+
+![](https://miro.medium.com/max/914/1*wLUEnTGILJikhM4-4pRb9g.png)
+
+Not only the h1 will become zero but also the derivative oh h1 w.r.t weight , let say w1, will become zero.The weights w₁, w₂, and bias b₁ will not get updated because there will be a zero term in the chain rule and the neuron will stay dead forever. This problem is known as the **Dying ReLU**.
+
+!()[https://miro.medium.com/max/958/1*kilDNZNFc9x4Y1JTEqPgcA.png]
+
+That means no gradients will flow back and all the weights connected to that neuron will not get updated. In practice when you train a network with ReLU, you will observe that a large fraction of neurons would die. To avoid this problem we can use other variants of ReLU like Leaky ReLU or we can initialize the weights and bias to a large positive value. By initializing the weights to a large positive value even if this large negative gradient flows through the network there is still a chance that it will not become a large negative value and hence it will not mess up the network.
+
+
+## Leaky ReLU
 
 
 
@@ -71,6 +101,13 @@ Thus we can comment that TanH also suffers from **Vanishing Gradient** But the a
 
 
 
+
+
+
+
+## Summary :
+
+![](https://i.stack.imgur.com/cQTjk.png)
 
 
 References :
