@@ -14,6 +14,9 @@
 
 To create complex DNNs but withh lesser parameters and thus less prone to overfitting
 
+* CNN are sparsely connected networks (less parameters, less complexity thus less prone to overfitting)
+* CNN uses weight sharing , thus using more kernels we can improve the complexity of model
+
 
 ## Source :
 https://towardsdatascience.com/understanding-convolution-neural-networks-the-eli5-way-785330cd1fb7
