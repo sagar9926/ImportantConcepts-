@@ -20,3 +20,5 @@ To create complex DNNs but withh lesser parameters and thus less prone to overfi
 
 ## Source :
 https://towardsdatascience.com/understanding-convolution-neural-networks-the-eli5-way-785330cd1fb7
+
+https://medium.com/@prvnk10/padhai-deep-learning-course-b12f99a91858
